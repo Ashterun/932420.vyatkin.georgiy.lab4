@@ -11,7 +11,7 @@ if (name) {
 }
 
 for (let i = 0; i < 7; i++) {
-    scores[i] = Math.floor(Math.random() * 101);
+  scores[i] = Math.floor(Math.random() * 101);
 }
 
 for (let i = 0; i < scores.length; i++) {
@@ -20,3 +20,36 @@ for (let i = 0; i < scores.length; i++) {
   }
 }
 
+function findMax(scores) {
+  let max = scores[0];
+
+  for (let i = 1; i < scores.length; i++) {
+    if (scores[i] > max) {
+      max = scores[i];
+    }
+  }
+
+  return max;
+}
+
+function filterHighScores(scores) {
+  const highScores = [];
+
+  for (let i = 0; i < scores.length; i++) {
+    if (scores[i] >= 80) {
+      highScores.push(scores[i]);
+    }
+  }
+
+  return highScores;
+}
+
+function calculateSum(scores) {
+  let sum = 0;
+
+  for (let i = 0; i < scores.length; i++) {
+    sum += scores[i];
+  }
+
+  return sum;
+}
