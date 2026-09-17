@@ -53,3 +53,16 @@ function calculateSum(scores) {
 
   return sum;
 }
+
+const maxScore = findMax(scores);
+const highScores = filterHighScores(scores);
+const totalSum = calculateSum(scores);
+const averageScore = totalSum / scores.length;
+
+alert(`У вас ${highScores.length} отличных работ, максимальный балл - ${maxScore}`);
+console.log(`Средний балл: ${averageScore}`);
+console.log(`Количество неудовлетворительных работ: ${countFail}`);
+
+if (averageScore >= 85) {
+    console.log(`Отличная работа! Молодец!`);
+}
