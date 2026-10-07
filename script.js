@@ -6,8 +6,8 @@ if (name) {
   alert(`Привет, ${name}!`);
   console.log(`Имя: ${name}`);
 } else {
-  alert(`Привет!`);
-  console.log(`Имя не было введено.`);
+  alert('Привет!');
+  console.log('Имя не было введено.');
 }
 
 for (let i = 0; i < 7; i++) {
@@ -64,5 +64,5 @@ console.log(`Средний балл: ${averageScore}`);
 console.log(`Количество неудовлетворительных работ: ${countFail}`);
 
 if (averageScore >= 85) {
-    console.log(`Отличная работа! Молодец!`);
+    console.log('Отличная работа! Молодец!');
 }
