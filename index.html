@@ -106,11 +106,24 @@
         height="100"
       />
 
-      <form id="contacts">
-        <input type="text" name="Name" placeholder="Имя" />
-        <input type="email" name="Email" placeholder="Email" />
-        <textarea name="Message" placeholder="Сообщение"></textarea>
-        <button>Отправить</button>
+      <form id="contacts" action="#" method="post">
+        <div>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="Name" placeholder="Имя" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="Email" placeholder="Email" />
+        </div>
+        <div>
+          <label for="message">Сообщение:</label>
+          <textarea
+            id="message"
+            name="Message"
+            placeholder="Сообщение"
+          ></textarea>
+        </div>
+        <button type="submit">Отправить</button>
       </form>
     </main>
     <footer>© 2026 Вяткин Георгий</footer>
