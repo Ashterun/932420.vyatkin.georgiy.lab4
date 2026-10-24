@@ -10,10 +10,10 @@
   <body>
     <header>
       <h1>Вяткин Георгий</h1>
-      <h2>Студент-разработчик</h2>
+      <p>Студент-разработчик</p>
 
       <nav class="menu">
-        <a href="#">Главная</a>
+        <a href="#main">Главная</a>
         <a href="#skills">Навыки</a>
         <a href="#projects">Проекты</a>
         <a href="#gallery">Галерея</a>
@@ -45,7 +45,9 @@
             <div class="projects-info">
               <h4>2D платформер</h4>
               <p>Unity, C#, Visual Studio Code, Photoshop</p>
-              <button>Подробнее</button>
+              <a href="https://github.com/Ashterun/Knight-Knight-Game"
+                >Подробнее</a
+              >
             </div>
           </article>
           <article class="projects-card">
@@ -53,7 +55,7 @@
             <div class="projects-info">
               <h4>Сайт с алгоритмами</h4>
               <p>HTML, CSS, JavaScript, Visual Studio Code</p>
-              <button>Подробнее</button>
+              <a href="https://github.com/Ashterun/Website">Подробнее</a>
             </div>
           </article>
           <article class="projects-card">
@@ -61,7 +63,7 @@
             <div class="projects-info">
               <h4>ToDo-приложение</h4>
               <p>HTML, CSS, JavaScript, Visual Studio Code</p>
-              <button>Подробнее</button>
+              <a href="https://github.com/Ashterun/Todolist">Подробнее</a>
             </div>
           </article>
         </div>
@@ -74,6 +76,8 @@
             <img
               src="screenshots/screenshot1.png"
               alt="Скриншот 2D платформера"
+              width="300"
+              height="250"
             />
             <figcaption>2D платформер</figcaption>
           </figure>
@@ -81,6 +85,8 @@
             <img
               src="screenshots/screenshot2.png"
               alt="Скриншот сайта с алгоритмами"
+              width="300"
+              height="250"
             />
             <figcaption>Сайт с алгоритмами</figcaption>
           </figure>
@@ -88,6 +94,8 @@
             <img
               src="screenshots/screenshot3.png"
               alt="Скриншот ToDo-приложения"
+              width="300"
+              height="250"
             />
             <figcaption>ToDo-приложение</figcaption>
           </figure>
@@ -100,8 +108,8 @@
       </aside>
 
       <img
-        src="https://i.pinimg.com/originals/74/05/f7/7405f728fcfee92d0b8a4e19b56f66a4.jpg?nii=t"
-        alt="Аватар"
+        src="screenshots/avatar.jpg"
+        alt="Аватар Вяткина Георгия"
         width="100"
         height="100"
       />
@@ -126,7 +134,7 @@
         <button type="submit">Отправить</button>
       </form>
     </main>
-    <footer>© 2026 Вяткин Георгий</footer>
+    <footer id="main">© 2026 Вяткин Георгий</footer>
     <script src="script.js"></script>
   </body>
 </html>

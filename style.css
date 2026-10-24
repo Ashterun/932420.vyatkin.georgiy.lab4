@@ -5,6 +5,12 @@
   --contrasting-color: white;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1400px;
   margin: 0 auto;
@@ -44,8 +50,14 @@ a:visited {
   color: #d0d0ff;
 }
 
-a:hover {
+a:hover,
+a:focus {
   background-color: skyblue;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+a:active {
+  background-color: navy;
 }
 
 button {
@@ -66,6 +78,11 @@ button:hover {
 button:active {
   background-color: navy;
   transform: translateY(0);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
 }
 
 .skills-grid {
@@ -120,7 +137,7 @@ button:active {
   background-color: var(--accent-color);
   transition: transform 0.3s ease;
   box-sizing: border-box;
-  width: calc(33.333% - 13.34px);
+  width: calc((100% - 40px) / 3);
 }
 
 .projects-card:hover {
@@ -160,6 +177,7 @@ button:active {
 
 .gallery-grid img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   display: block;
 }
@@ -169,7 +187,7 @@ button:active {
   padding: 4px 8px;
   position: absolute;
   bottom: 8px;
-  width: calc(100% - 16px);
+  width: 100%;
   text-align: center;
 }
 
@@ -193,7 +211,7 @@ form {
 
 input,
 textarea {
-  width: 93%;
+  width: 100%;
   padding: 15px;
   border: 2px solid blue;
   border-radius: 10px;
@@ -212,16 +230,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-  }
-
   .skills-grid {
     grid-template-columns: 1fr;
   }
 
   .projects-card {
-    width: calc(50% - 10px);
+    width: calc((100% - 20px) / 2);
   }
 
   .gallery-grid {
